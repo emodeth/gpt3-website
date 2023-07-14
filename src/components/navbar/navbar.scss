@@ -1,0 +1,180 @@
+@import "../../variables";
+
+.navbar {
+  width: 100%;
+
+  padding: 2rem 6rem;
+
+  &__container {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 62.557px;
+    height: 16.016px;
+    margin-right: 50px;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 1.5rem;
+    transition: 0.15s;
+
+    &:hover {
+      opacity: 0.85;
+    }
+
+    &:active {
+      opacity: 0.75;
+    }
+  }
+
+  &__sign-container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+  }
+
+  &__sign-in {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background-color: transparent;
+    margin-right: 26px;
+    cursor: pointer;
+    transition: 0.15s;
+
+    &:hover {
+      opacity: 0.85;
+    }
+
+    &:active {
+      opacity: 0.75;
+    }
+  }
+
+  &__sign-up {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    background-color: $color-bg-button;
+    padding: 15px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.15s;
+
+    &:hover {
+      box-shadow: 0px 0px 8px 1px rgba(255, 72, 32, 0.75);
+      -webkit-box-shadow: 0px 0px 8px 1px rgba(255, 72, 32, 0.75);
+      -moz-box-shadow: 0px 0px 8px 1px rgba(255, 72, 32, 0.75);
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+
+  &__mobile-container {
+    transition: 0.15s;
+    background-color: #fff;
+    position: absolute;
+    left: -101%;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+  }
+
+  &__mobile-container-active {
+    left: 0 !important;
+  }
+
+  &__mobile-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__mobile-link {
+    color: $color-bg;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+  }
+
+  &__menu-icon-container {
+    padding: 2px 10px;
+    display: none;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 2rem 3rem;
+    width: 100vw;
+
+    &__container {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    &__links {
+      display: none;
+    }
+
+    &__sign-container {
+      display: none;
+    }
+
+    &__menu-icon-container {
+      display: block;
+    }
+
+    &__mobile-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      button {
+        padding: 2px 10px;
+        background-color: transparent;
+      }
+    }
+
+    &__logo {
+      width: 64px;
+      height: 30px;
+    }
+
+    &__menu-icon {
+      color: #fff;
+      font-weight: bold;
+      font-size: 28px;
+    }
+  }
+}
+
+.fa-xmark {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 32px;
+}

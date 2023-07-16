@@ -1,0 +1,151 @@
+@import "../../variables";
+
+.header {
+  width: 100%;
+
+  &__container {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+  }
+
+  &__header {
+    font-size: 62px;
+    font-weight: 800;
+    background: $gradient-text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+    letter-spacing: -0.04em;
+    line-height: 75px;
+  }
+
+  &__description {
+    color: $color-text;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    width: 80%;
+    margin-bottom: 30px;
+    line-height: 27px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    width: 450px;
+    background-color: #052d56;
+    padding: 20px 32px;
+    border-radius: 5px 0px 0px 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+
+    &::placeholder {
+      color: #3d6184;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  &__button {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: $color-bg-button;
+    padding: 0px 32px;
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.15s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.85;
+    }
+
+    &:active {
+      opacity: 0.75;
+    }
+  }
+
+  &__people {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 500;
+    gap: 20px;
+  }
+
+  &__ai-image {
+    width: 700px;
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    margin-top: 10px;
+
+    &__container {
+      padding: 2rem;
+      width: 100vw;
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__header {
+      margin-bottom: 50px;
+    }
+
+    &__description {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &__form {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &__input {
+      width: 260px;
+    }
+
+    &__button {
+      padding: 0px 15px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    &__people {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+
+    &__ai-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -51,6 +51,21 @@ a {
 }
 
 .gradient__bg {
+  width: 100vw;
+  max-height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+}
+
+.bg {
   background: radial-gradient(
     circle at 3% 25%,
     rgba(0, 40, 83, 1) 0%,

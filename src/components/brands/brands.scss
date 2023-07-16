@@ -1,0 +1,25 @@
+.brands {
+  &__container {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    height: 150px;
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .brands__container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .brands__container {
+    width: 100%;
+  }
+}

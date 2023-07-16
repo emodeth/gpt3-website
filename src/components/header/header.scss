@@ -4,9 +4,10 @@
   width: 100%;
 
   &__container {
-    width: 1400px;
+    width: 1600px;
     height: 100%;
     margin: 0 auto;
+    padding: 2rem 5rem;
 
     display: flex;
     align-items: center;
@@ -102,7 +103,7 @@
     margin-top: 10px;
 
     &__container {
-      padding: 2rem;
+      padding: 2rem 1rem;
       width: 100vw;
       flex-direction: column;
     }
@@ -114,6 +115,8 @@
 
     &__header {
       margin-bottom: 50px;
+      font-size: 48px;
+      line-height: 60px;
     }
 
     &__description {
@@ -127,7 +130,62 @@
     }
 
     &__input {
-      width: 260px;
+      width: 80%;
+    }
+
+    &__button {
+      padding: 0px 15px;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    &__people {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+
+    &__ai-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    margin-top: 10px;
+
+    &__container {
+      padding: 2rem 3rem;
+      width: 100vw;
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__header {
+      margin-bottom: 50px;
+      font-size: 48px;
+      line-height: 60px;
+    }
+
+    &__description {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &__form {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &__input {
+      width: 80%;
     }
 
     &__button {

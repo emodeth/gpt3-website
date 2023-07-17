@@ -1,7 +1,10 @@
 @import "../../variables";
 .feature {
+  width: 100%;
+
   &__container {
     display: flex;
+    gap: 20px;
 
     h1 {
       color: #fff;
@@ -9,22 +12,23 @@
       font-size: 24px;
       font-style: normal;
       font-weight: 800;
-      line-height: 312.5%;
-      letter-spacing: -0.96px;
+      padding: 15px 0px;
     }
 
     p {
       color: #81afdd;
-      font-family: Manrope;
+      font-family: "Manrope";
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
       line-height: 187.5%;
+      width: auto;
     }
 
     &-r {
+      align-items: center;
       justify-content: space-between;
-      padding: 40px;
+      padding: 10px;
       p {
         width: 70%;
       }
@@ -48,6 +52,9 @@
 @media screen and (max-width: 600px) {
   .feature__container-r {
     flex-direction: column;
+    align-items: unset;
+    justify-content: unset;
+    padding: 40px;
     p {
       width: 100%;
     }

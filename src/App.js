@@ -23,6 +23,8 @@ function App() {
       <Features />
       <Possibilities />
       <CTA />
+      <Blog />
+      <Footer />
     </>
   );
 }

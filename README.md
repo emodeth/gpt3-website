@@ -1,4 +1,4 @@
-<div align='center'><img style="width:16%" src="https://emodeth.github.io/gpt3-website/static/media/blog02.ab0eb367561796e91532.png"/></div>
+<div align='center'><img style="width:40%; object-fit: cover;" src="https://emodeth.github.io/gpt3-website/static/media/blog02.ab0eb367561796e91532.png"/></div>
 
 <h2>About the project</h2>
 

@@ -1,4 +1,4 @@
-<div align='center'><img style="width:16%" src="https://emodeth.github.io/gpt3-website/static/media/ai.aa60586ba1ba53762d94.png"/></div>
+<div align='center'><img style="width:16%" src="https://emodeth.github.io/gpt3-website/static/media/blog02.ab0eb367561796e91532.png"/></div>
 
 <h2>About the project</h2>
 
@@ -17,8 +17,6 @@
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
-<h3 align='center'>Home Page 🏡</h3>
-
 <div align='center'>
   <img src="https://github.com/emodeth/gpt3-website/assets/110347611/b16b0e28-7e07-40b4-ac9b-085ceba7cde7" />
 </div>

@@ -7,7 +7,7 @@ import blog5 from "../../assets/blog05.png";
 
 function Blog() {
   return (
-    <div className="blog" id="blog">
+    <div className="blog" id="open-ai">
       <h1>A lot is happening, We are blogging about it.</h1>
       <div className="blog__container">
         <BlogItem

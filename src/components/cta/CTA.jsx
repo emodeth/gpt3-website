@@ -2,7 +2,7 @@ import "./cta.scss";
 
 function CTA() {
   return (
-    <div className="cta">
+    <div className="cta" id="library">
       <div className="cta__container">
         <div className="cta__content">
           <p>Request Early Access to Get Started</p>

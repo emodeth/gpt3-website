@@ -3,7 +3,7 @@ import Feature from "../feature/Feature";
 
 function Features() {
   return (
-    <div className="features">
+    <div className="features" id="case-studies">
       <div className="features__container">
         <div className="features__header">
           <h1>

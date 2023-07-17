@@ -1,12 +1,25 @@
 import "./navbar.scss";
 import logo from "../../assets/logo.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(function () {
+    function handleSticky() {
+      if (window.scrollY >= 300) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    }
+
+    window.addEventListener("scroll", handleSticky);
+  });
 
   return (
-    <nav className="navbar">
+    <nav className={isSticky ? "navbar sticky-navbar" : "navbar"}>
       <div className="navbar__container">
         <img className="navbar__logo" src={logo} alt="logo"></img>
         <Menu />

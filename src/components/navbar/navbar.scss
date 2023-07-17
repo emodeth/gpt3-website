@@ -171,6 +171,14 @@
   }
 }
 
+.sticky-navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.16);
+  position: fixed;
+  z-index: 500;
+  height: 100px;
+}
+
 @media screen and (max-width: 992px) {
   .navbar {
     padding: 2rem 3rem;

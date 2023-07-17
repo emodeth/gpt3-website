@@ -4,7 +4,7 @@ import imgPeople from "../../assets/people.png";
 
 function Header() {
   return (
-    <div className="header">
+    <div className="header" id="home">
       <div className="header__container">
         <div className="header__content">
           <h1 className="header__header">

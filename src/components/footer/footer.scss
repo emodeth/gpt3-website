@@ -1,0 +1,117 @@
+@import "../../variables";
+
+.footer {
+  background-color: $color-footer;
+  padding-bottom: 40px;
+  &__container {
+    width: 1400px;
+    margin: 50px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 300px;
+
+    h1 {
+      background: $gradient-text;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-family: Manrope;
+      font-size: 62px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 75px; /* 120.968% */
+      letter-spacing: -2.48px;
+      margin-bottom: 80px;
+    }
+
+    button {
+      color: #fff;
+      background-color: transparent;
+      cursor: pointer;
+      border: 1px solid #fff;
+      padding: 20px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    .footer__list:nth-of-type(3) {
+      li {
+        cursor: unset !important;
+      }
+    }
+  }
+
+  &__list {
+    p {
+      color: #fff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 36px;
+    }
+
+    li {
+      color: #fff;
+
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 26px;
+      cursor: pointer;
+    }
+  }
+
+  &__logos {
+    p {
+      width: 60%;
+      margin-top: 25px;
+      color: #fff;
+
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    &__logos {
+      p {
+        width: 100%;
+      }
+    }
+
+    &__container {
+      width: 100vw;
+    }
+
+    &__header {
+      padding: 40px;
+    }
+
+    &__nav {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px;
+      gap: 50px;
+    }
+  }
+}

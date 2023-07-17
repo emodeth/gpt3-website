@@ -7,3 +7,4 @@ export { default as CTA } from "./cta/CTA";
 export { default as WhatGPT3 } from "./whatGPT3/WhatGPT3";
 export { default as Footer } from "./footer/Footer";
 export { default as Features } from "./features/Features";
+export { default as Possibilities } from "./possibilities/Possibilities";

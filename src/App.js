@@ -3,6 +3,7 @@ import {
   Header,
   Brands,
   Features,
+  Possibilities,
   CTA,
   Blog,
   WhatGPT3,
@@ -20,6 +21,7 @@ function App() {
       <Brands />
       <WhatGPT3 />
       <Features />
+      <Possibilities />
     </>
   );
 }

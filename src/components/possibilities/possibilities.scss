@@ -2,13 +2,14 @@
 
 .possibilities {
   width: 100%;
+  margin-top: 50px;
+  margin-bottom: 150px;
 
   &__container {
     width: 1400px;
     margin: 0 auto;
     display: flex;
     align-items: flex-end;
-    margin-top: 50px;
   }
 
   &__content {

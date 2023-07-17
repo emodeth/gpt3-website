@@ -1,0 +1,76 @@
+@import "../../variables";
+
+.cta {
+  width: 100vw;
+  margin-bottom: 150px;
+
+  &__container {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $gradient-bar;
+    border: 1px solid #000;
+    border-radius: 11px;
+    padding: 45px;
+
+    p {
+      color: #0e0e0e;
+      font-family: "Manrope";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 250% */
+    }
+
+    h2 {
+      color: #000;
+      font-family: Manrope;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 45px; /* 187.5% */
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    padding: 15px 45px;
+    background-color: #000;
+    border-radius: 40px;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 166.667% */
+    transition: 0.15s;
+
+    &:hover {
+      background-color: #0f0f0f;
+    }
+
+    &:active {
+      background-color: #141414;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cta {
+    &__container {
+      width: 90vw;
+      flex-direction: column;
+    }
+
+    &__content {
+      margin-bottom: 40px;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -22,6 +22,7 @@ function App() {
       <WhatGPT3 />
       <Features />
       <Possibilities />
+      <CTA />
     </>
   );
 }

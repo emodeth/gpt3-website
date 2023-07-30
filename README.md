@@ -18,5 +18,5 @@
 <h2>Screenshots of the Project 📸</h2>
 <br>
 <div align='center'>
-  <img src="https://github.com/emodeth/gpt3-website/assets/110347611/b16b0e28-7e07-40b4-ac9b-085ceba7cde7" />
+  <img src="https://img001.prntscr.com/file/img001/sLFYkxD0SYmstfUNHK23hQ.png" />
 </div>
